@@ -2,7 +2,7 @@
 
 #### What is this project about?
 
-This project is focussed on using a Dataset containing identified russian disinformation tweets from 2015-2017[1] provided by FiveFirtyEight, as well as a control dataset in the form of the twitter sentiment analysis dataset from kaggle [2], to train a Graph Convolutional Network on a word resonance graph resembling the tweets to classify whether a tweet came from a disinformation propagator or not.
+This project is focused on using a dataset containing identified Russian disinformation tweets from 2015-2017[1] provided by FiveFirtyEight, as well as a control dataset in the form of the Twitter sentiment analysis dataset from Kaggle [2], to train a Graph Convolutional Network on a word resonance graph resembling the tweets to classify whether a tweet came from a disinformation propagator or not.
 
 #### Theoretical Background
 
