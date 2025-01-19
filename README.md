@@ -18,7 +18,7 @@ To measure the interaction between respective users, this report makes use of a 
 
 The word resonance between twitter contents A and B, $WR_{AB}$, as follows [5]:
 
-$$WR_{AB} = (I_A \cdot I_B) \forall v \in \{V_A \cap V_B\}$$
+$$WR = (I_A \cdot I_B) \forall v \in \{V_A \cap V_B\}$$
 
 Where $I_A$ and $I_B$ represent the betweenness centrality of a respective node in the KG of the tweets. The betweenness centrality of a node is defined as follows [6]:
 
@@ -28,11 +28,11 @@ Where $\sigma(s,t)$ is the number of shortest paths in the KG and $\sigma(s,t|v)
 
 Next the word resonance was standardized such that [5]:
 
-$$\overline{WR}_{AB} = \frac{WR_{AB}}{\sqrt{\sum_i I_i^A \cdot \sum_i I_i^B}} $$
+$$\overline{WR}_{AB} =\frac{WR}{ \sqrt{\sum_i I_i^A \cdot \sum_i I_i^B}}$$
 
 This standardized measure could then be used to create a resonance matrix [5]:
 
-$$m_{ij} = \left\{ 
+$$m_{ij} = \left\lbrace 
   \begin{array}{ c l }
     \overline{WR}_{ij} & \quad \textrm{if } i \neq j \\
     0                 & \quad \textrm{if } i = j
@@ -41,7 +41,7 @@ $$m_{ij} = \left\{
 
 Finally, using a hyperparameter threshold, τ, the adjacency matrix of the resonance graph was defined as [5]:
 
-$$a_{ij} = \left\{ 
+$$a_{ij} = \left\lbrace 
   \begin{array}{ c l }
     1 & \quad \textrm{if } m_{ij} \geq \tau \\
     0                 & \quad \textrm{if } m_{ij} < \tau
